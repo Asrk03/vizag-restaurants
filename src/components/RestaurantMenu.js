@@ -19,8 +19,6 @@ const RestaurantMenu = ()=>{
                 <h2 className="text-3xl font-mono font-bold">MENU</h2>
             </div>
             <div className="flex flex-wrap justify-center mt-8">
-                
-                {console.log(restaurantMenu)}
                 {
                     Object.values(restaurantMenu).map(
                         
