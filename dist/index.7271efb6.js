@@ -32458,17 +32458,17 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex justify-between",
+        className: "flex justify-between bg-slate-100",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "flex py-4 text-3xl",
+                className: "flex py-4 text-3xl font-medium ml-5 font-mono",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                     to: "/",
-                    children: "Vizag Restaurant"
+                    children: "Vizag Restaurants"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
                     lineNumber: 7,
-                    columnNumber: 48
+                    columnNumber: 75
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
@@ -32478,10 +32478,10 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: "flex py-6",
+                    className: "flex py-6 mr-10 font-mono",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-2",
+                            className: "px-2 mx-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
                                 children: "Home"
@@ -32496,7 +32496,7 @@ const Header = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-2",
+                            className: "px-2 mx-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/about",
                                 children: "About"
@@ -32511,7 +32511,7 @@ const Header = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-2",
+                            className: "px-2 mx-2 cursor-pointer",
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
@@ -32584,12 +32584,12 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container flex justify-center ",
+                className: "font-mono search-container flex justify-center mt-3 mb-2",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
-                        className: "search-input",
-                        placeholder: "search",
+                        className: "font-sans search-input border rounded p-2 mr-4",
+                        placeholder: "search for restaurant's",
                         value: searchInput,
                         onChange: (e)=>{
                             setSearchInput(e.target.value);
@@ -32600,7 +32600,7 @@ const Body = ()=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "border-black border-2 rounded-md pl-4 pr-4",
+                        className: "transition ease-in-out delay-150 bg-slate-200 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md pl-4 pr-4",
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
@@ -32622,7 +32622,7 @@ const Body = ()=>{
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap place-content-center",
                 children: filteredRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        className: "links hover:shadow-lg",
+                        className: "border rounded-md m-1 links hover:shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-slate-200 duration-50 ",
                         to: "/restaurant/" + restaurant.data.id,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             ...restaurant.data
@@ -32673,9 +32673,10 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constants = require("../constants");
 const RestaurantCard = ({ name , cloudinaryImageId , totalRatingsString , avgRating , cuisines  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "w-[300px] p-2 m-2 grid-cols-3 gap-4 ",
+        className: "w-[300px] p-2 m-2 grid-cols-3 gap-4 font-mono",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "rounded-lg border mb-2",
                 src: (0, _constants.IMG_CDN_LINK) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",

@@ -11,25 +11,25 @@ const Body = ()=>{
     if(!filteredRestaurants)return <Shimmer/>;
     return (
         <>
-            <div className="search-container flex justify-center ">
+            <div className="font-mono search-container flex justify-center mt-3 mb-2">
                 <input 
                     type = "text" 
-                    className="search-input" 
-                    placeholder = "search" 
+                    className="font-sans search-input border rounded p-2 mr-4" 
+                    placeholder = "search for restaurant's" 
                     value={searchInput}
                     onChange = {(e)=>{
                         setSearchInput(e.target.value);
                     }
                 }
             />
-                <button className="border-black border-2 rounded-md pl-4 pr-4">Search</button>
+                <button className="transition ease-in-out delay-150 bg-slate-200 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md pl-4 pr-4">Search</button>
             </div>
             {filteredRestaurants.length === 0 ? (
                 <h2>NO SUCH RESTAURANTS</h2>
             ) : (
                 <div className="flex flex-wrap place-content-center">
                     {filteredRestaurants.map((restaurant) => (
-                        <Link className="links hover:shadow-lg" to = {"/restaurant/"+ restaurant.data.id} key={restaurant.data.id}>
+                        <Link className="border rounded-md m-1 links hover:shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-slate-200 duration-50 " to = {"/restaurant/"+ restaurant.data.id} key={restaurant.data.id}>
                             <RestaurantCard {...restaurant.data} />
                         </Link>
                     ))}
