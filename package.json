@@ -2,7 +2,7 @@
   "name": "class-5",
   "version": "1.0.0",
   "description": "",
-  "source":"index.html",
+  "source": "index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -19,6 +19,7 @@
     "tailwindcss": "^3.2.7"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1"

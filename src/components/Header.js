@@ -11,9 +11,8 @@ const Header = ()=>{
                     <Link to="/" >Home</Link>
                     </li>
                     <li className="px-2 mx-2">
-                    <Link to = "/about" >About</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
-                    <li className="px-2 mx-2 cursor-pointer">Contact</li>
                 </ul>
             </div>
         </div>

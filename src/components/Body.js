@@ -29,7 +29,7 @@ const Body = ()=>{
             ) : (
                 <div className="flex flex-wrap place-content-center">
                     {filteredRestaurants.map((restaurant) => (
-                        <Link className="border rounded-md m-1 links hover:shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-slate-200 duration-50 " to = {"/restaurant/"+ restaurant.data.id} key={restaurant.data.id}>
+                        <Link className="border rounded-md m-1 links hover:shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-slate-200 duration-0 " to = {"/restaurant/"+ restaurant.data.id} key={restaurant.data.id}>
                             <RestaurantCard {...restaurant.data} />
                         </Link>
                     ))}
